@@ -19,6 +19,8 @@ resources:
             Type: AWS::S3::Bucket
             Properties:
                 BucketName: static.wallsin.com
+            WebsiteConfiguration:
+                IndexDocument: index.html
         staticBucketPolicy:
             Type: AWS::S3::BucketPolicy
             Properties:
