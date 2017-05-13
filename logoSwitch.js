@@ -12,7 +12,7 @@ module.exports.switch = function() {
     params = {
         Bucket: 'static.wallsin.com',
         Key: 'email/logo.png',
-        body: data
+        Body: data
     };
 
     s3.putObject(params, function(err, data) {
