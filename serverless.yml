@@ -18,7 +18,7 @@ resources:
         staticBucket:
             Type: AWS::S3::Bucket
             Properties:
-                S3Bucket: static.wallsin.com
+                BucketName: static.wallsin.com
         staticBucketPolicy:
             Type: AWS::S3::BucketPolicy
             Properties:
