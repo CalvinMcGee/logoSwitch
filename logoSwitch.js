@@ -12,7 +12,8 @@ module.exports.switch = function() {
     params = {
         Bucket: 'static.wallsin.com',
         Key: 'email/logo.png',
-        Body: data
+        Body: data,
+        ContentType: 'image/png'
     };
 
     s3.putObject(params, function(err, data) {
