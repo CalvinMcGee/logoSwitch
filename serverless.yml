@@ -1,0 +1,44 @@
+service: logoSwitch
+
+provider:
+    name: aws
+    runtime: nodejs6.10
+    memorySize: 512
+    timeout: 10
+    versionFunctions: false
+    region: eu-west-1
+    iamRoleStatements:
+        - Effect: Allow
+          Action:
+              - s3:PutObject
+          Resource: "arn:aws:s3:::static.wallsin.com/*"
+
+resources:
+    Resources:
+        staticBucket:
+            Type: AWS::S3::Bucket
+            Properties:
+                S3Bucket: static.wallsin.com
+        staticBucketPolicy:
+            Type: AWS::S3::BucketPolicy
+            Properties:
+                Bucket: static.wallsin.com
+                PolicyDocument: {
+                    Statement: [
+                        {
+                            Sid: PublicReadGetObject,
+                            Effect: Allow,
+                            Principal: *,
+                            Action: s3:GetObject,
+                            Resource: arn:aws:s3:::static.wallsin.com/*
+                        }
+                    ]
+                }
+
+functions:
+    logo-switch:
+        handler: handler.logoSwitch
+        name: LogoSwitch
+        description: Uploads new version of logo.
+        events:
+            - schedule: rate(24 hours)

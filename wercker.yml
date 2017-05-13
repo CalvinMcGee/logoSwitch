@@ -1,0 +1,10 @@
+box: node:4.2.6-slim
+
+deploy:
+  steps:
+    - script:
+        name: install serverless
+        code: npm install -g serverless
+    - script:
+        name: Deploy serverless
+        code: serverless deploy
