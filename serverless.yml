@@ -43,4 +43,4 @@ functions:
         name: LogoSwitch
         description: Uploads new version of logo.
         events:
-            - schedule: cron(0 23 * * *)
+            - schedule: cron(0 23 * * ? *)
