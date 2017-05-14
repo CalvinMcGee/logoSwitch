@@ -13,7 +13,8 @@ module.exports.switch = function() {
         Bucket: 'static.wallsin.com',
         Key: 'email/logo.png',
         Body: data,
-        ContentType: 'image/png'
+        ContentType: 'image/png',
+        CacheControl: 'max-age=86400'
     };
 
     s3.putObject(params, function(err, data) {
