@@ -5,9 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 250.00001 250.00001"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   viewBox="0 0 299.99999 299.99999">
   <defs
      id="defs4" />
   <metadata
@@ -25,20 +25,21 @@
   <g
      id="layer1">
     <path
-       style="fill:#1F1856;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 30.683002,22.500007 28,-7e-5 49.999998,205.000073 -27.999918,0 z"
-       id="path5095" />
+       id="path5095"
+       d="m 55.683,47.499998 28,-7e-5 49.99999,205.000072 -27.99991,0 z"
+       style="fill:#1F1856;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#1F1856;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 111.11444,22.500007 27.99992,-1.5e-4 30,205.000153 -27.99992,0 z"
-       id="path5095-2" />
+       id="path5095-2"
+       d="m 136.11443,47.499998 27.99992,-1.5e-4 30,205.000152 -27.99992,0 z"
+       style="fill:#1F1856;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#3E3A82;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 138.88552,22.500017 -27.99987,-1.5e-4 -29.999908,205.000143 27.999868,0 z"
-       id="path5095-5-6" />
+       id="path5095-5-6"
+       d="m 163.88551,47.500008 -27.99987,-1.5e-4 -29.9999,205.000142 27.99986,0 z"
+       style="fill:#3E3A82;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       style="fill:#3E3A82;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 219.31689,22.499867 -27.99987,-1.5e-4 -49.99992,205.000143 27.99987,0 z"
-       id="path5095-5-6-9" />
+       id="path5095-5-6-9"
+       d="m 244.31688,47.499858 -27.99987,-1.5e-4 -49.99992,205.000142 27.99987,0 z"
+       style="fill:#3E3A82;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
+
