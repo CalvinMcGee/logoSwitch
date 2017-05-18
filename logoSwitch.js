@@ -4,11 +4,16 @@ var s3 = new AWS.S3();
 
 module.exports.switch = function() {
     var imgPath = './img/';
+    var svgPath = './svg/';
+
     imgFiles = fs.readdirSync(imgPath);
+    svgFiles = fs.readdirSync(svgPath);
+
     imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
+    svgFile = fs.readFileSync(svgPath + svgFiles[Math.floor(Math.random() * svgFiles.length)]);
 
     putFile('email/logo.png', imgFile, 'image/png');
-
+    putFile('html/logo.svg', svgFile, 'image/svg+xml');
 };
 
 var putFile = function(key, data, contentType) {
