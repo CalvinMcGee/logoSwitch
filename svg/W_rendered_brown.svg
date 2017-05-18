@@ -5,9 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
+   viewBox="0 0 250.00001 250.00001"
    id="svg2"
-   viewBox="0 0 209.99999 209.99999">
+   version="1.1">
   <defs
      id="defs4" />
   <metadata
@@ -25,20 +25,20 @@
   <g
      id="layer1">
     <path
-       id="path5095"
-       d="m 10.699999,2.4999734 28,-7e-5 50,205.0000766 -27.99992,0 z"
-       style="fill:#7B4915;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#7B4915;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 30.683002,22.500007 28,-7e-5 49.999998,205.000073 -27.999918,0 z"
+       id="path5095" />
     <path
-       id="path5095-2"
-       d="m 91.131439,2.4999734 27.999921,-1.5e-4 30,205.0001566 -27.99992,0 z"
-       style="fill:#7B4915;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#7B4915;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.11444,22.500007 27.99992,-1.5e-4 30,205.000153 -27.99992,0 z"
+       id="path5095-2" />
     <path
-       id="path5095-5-6"
-       d="m 118.90252,2.4999834 -27.999871,-1.5e-4 -29.99991,205.0001466 27.99987,0 z"
-       style="fill:#BA7F42;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#BA7F42;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 138.88552,22.500017 -27.99987,-1.5e-4 -29.999908,205.000143 27.999868,0 z"
+       id="path5095-5-6" />
     <path
-       id="path5095-5-6-9"
-       d="m 199.33389,2.4998334 -27.99987,-1.5e-4 -49.99992,205.0001466 27.99987,0 z"
-       style="fill:#BA7F42;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#BA7F42;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 219.31689,22.499867 -27.99987,-1.5e-4 -49.99992,205.000143 27.99987,0 z"
+       id="path5095-5-6-9" />
   </g>
 </svg>
