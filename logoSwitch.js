@@ -3,17 +3,21 @@ var AWS = require('aws-sdk');
 var s3 = new AWS.S3();
 
 module.exports.switch = function() {
-    var path = './img/';
+    var imgPath = './img/';
+    imgFiles = fs.readdirSync(imgPath);
+    imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
 
-    files = fs.readdirSync(path);
+    putFile('email/logo.png', imgFile, 'image/png');
 
-    data = fs.readFileSync(path + files[Math.floor(Math.random() * files.length)]);
+};
+
+var putFile = function(key, data, contentType) {
 
     params = {
         Bucket: 'static.wallsin.com',
-        Key: 'email/logo.png',
+        Key: key,
         Body: data,
-        ContentType: 'image/png',
+        ContentType: contentType,
         CacheControl: 'max-age=86400'
     };
 
@@ -21,4 +25,4 @@ module.exports.switch = function() {
         if (err) console.log(err, err.stack); // an error occurred
         else     console.log(data);           // successful response
     });
-};
+}
