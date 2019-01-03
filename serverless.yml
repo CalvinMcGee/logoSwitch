@@ -6,7 +6,7 @@ provider:
     memorySize: 512
     timeout: 10
     versionFunctions: false
-    region: eu-west-1
+    region: eu-north-1
     iamRoleStatements:
         - Effect: Allow
           Action:
