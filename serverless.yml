@@ -37,6 +37,11 @@ provider:
                     #]
                 #}
 
+package:
+    exclude:
+        - wercker.yml
+        - Dockerfile
+
 functions:
     logo-switch:
         handler: handler.logoSwitch
