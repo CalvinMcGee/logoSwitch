@@ -9,8 +9,8 @@ module.exports.switch = function() {
     var imgFiles = fs.readdirSync(imgPath);
     var svgFiles = fs.readdirSync(svgPath);
 
-    imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
-    svgFile = fs.readFileSync(svgPath + svgFiles[Math.floor(Math.random() * svgFiles.length)]);
+    var imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
+    var svgFile = fs.readFileSync(svgPath + svgFiles[Math.floor(Math.random() * svgFiles.length)]);
 
     putFile('email/logo.png', imgFile, 'image/png');
     putFile('html/logo.svg', svgFile, 'image/svg+xml');
