@@ -2,7 +2,7 @@ service: logoSwitch
 
 provider:
     name: aws
-    runtime: nodejs6.10
+    runtime: nodejs8.10
     memorySize: 512
     timeout: 10
     versionFunctions: false
