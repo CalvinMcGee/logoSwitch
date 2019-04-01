@@ -6,8 +6,8 @@ module.exports.switch = function() {
     var imgPath = './img/';
     var svgPath = './svg/';
 
-    imgFiles = fs.readdirSync(imgPath);
-    svgFiles = fs.readdirSync(svgPath);
+    var imgFiles = fs.readdirSync(imgPath);
+    var svgFiles = fs.readdirSync(svgPath);
 
     imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
     svgFile = fs.readFileSync(svgPath + svgFiles[Math.floor(Math.random() * svgFiles.length)]);
@@ -18,7 +18,7 @@ module.exports.switch = function() {
 
 var putFile = function(key, data, contentType) {
 
-    params = {
+    var params = {
         Bucket: 'static.wallsin.com',
         Key: key,
         Body: data,
