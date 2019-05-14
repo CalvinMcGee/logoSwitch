@@ -1,24 +1,26 @@
-var fs = require('fs');
-var AWS = require('aws-sdk');
-var s3 = new AWS.S3();
+const fs = require('fs');
+const AWS = require('aws-sdk');
+const s3 = new AWS.S3();
 
 module.exports.switch = function() {
-    var imgPath = './img/';
-    var svgPath = './svg/';
+    const imgPath = './img/';
+    const svgPath = './svg/';
 
-    var imgFiles = fs.readdirSync(imgPath);
-    var svgFiles = fs.readdirSync(svgPath);
+    const imgFiles = fs.readdirSync(imgPath);
+    const svgFiles = fs.readdirSync(svgPath);
 
-    var imgFile = fs.readFileSync(imgPath + imgFiles[Math.floor(Math.random() * imgFiles.length)]);
-    var svgFile = fs.readFileSync(svgPath + svgFiles[Math.floor(Math.random() * svgFiles.length)]);
+    const daySinceEpoch = Math.floor((new Date()).getTime() / (24 * 60 * 60 * 1000));
+
+    const imgFile = fs.readFileSync(imgPath + imgFiles[daySinceEpoch % imgFiles.length)]);
+    const svgFile = fs.readFileSync(svgPath + svgFiles[daySinceEpoch % svgFiles.length)]);
 
     putFile('email/logo.png', imgFile, 'image/png');
     putFile('html/logo.svg', svgFile, 'image/svg+xml');
 };
 
-var putFile = function(key, data, contentType) {
+const putFile = function(key, data, contentType) {
 
-    var params = {
+    const params = {
         Bucket: 'static.wallsin.com',
         Key: key,
         Body: data,
