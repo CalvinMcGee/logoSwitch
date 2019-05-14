@@ -11,8 +11,8 @@ module.exports.switch = function() {
 
     const daySinceEpoch = Math.floor((new Date()).getTime() / (24 * 60 * 60 * 1000));
 
-    const imgFile = fs.readFileSync(imgPath + imgFiles[daySinceEpoch % imgFiles.length)]);
-    const svgFile = fs.readFileSync(svgPath + svgFiles[daySinceEpoch % svgFiles.length)]);
+    const imgFile = fs.readFileSync(imgPath + imgFiles[daySinceEpoch % imgFiles.length]);
+    const svgFile = fs.readFileSync(svgPath + svgFiles[daySinceEpoch % svgFiles.length]);
 
     putFile('email/logo.png', imgFile, 'image/png');
     putFile('html/logo.svg', svgFile, 'image/svg+xml');
