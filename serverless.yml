@@ -41,6 +41,7 @@ package:
     exclude:
         - wercker.yml
         - Dockerfile
+        - dev-docker.sh
 
 functions:
     logo-switch:
